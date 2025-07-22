@@ -7,17 +7,38 @@
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
+    
     <header>
+      <input type="checkbox" id="shopTools"></input>
+      <input type="checkbox" id="profileSetting"></input>
+      <section class="shopTools">
+        <div class="shopToolsItems">
+        <h2>Outils du shop</h2>
+           <ul>
+            <li>Dashboard</li>
+            <li>Historique</li>
+            <li>Promotion</li>
+            <li>Mes jetons</li>
+            <li>Mes cadeaux</li>
+            <li>Competition</li>
+            <li>Mes Activités</li>
+            <li>Zone personnelle</li>
+           </ul>
+        </div>
+      </section>
+      
       <div class="bare-menu">
-        <a href="#" id="setting-icon">
-          <img src="icon/barres-decalees.png" alt="icon reglage" />
-        </a>
-        <a href="#" id="profile-pic">
-          <img src="image/profile.png" alt="profile" class="profile" />
-        </a>
-        <a href="html/article.html" id="logo-store">
-          <img src="image/logo-boutique.png" alt="logo de la boutique" id="logo-store" />
-        </a>
+         <label  for="shopTools">
+           <img src="icon/barres-decalees.png" alt="icon reglage" height="25px" width="25px"/>
+         </label>
+         
+          <a href="html/article.html">
+            <p id="logo-store">La <span id="logospan1">bou</span>teille <br/> <span id="logospan2">.store</span></p>
+          </a>
+        
+         <label for="profileSetting">
+           <img src="" alt="profile" class="profile" height ="30px" width="30px"/>
+         </label>
       </div>
     </header>
 
