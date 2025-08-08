@@ -2,117 +2,203 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>exercise - article</title>
-  <link rel="stylesheet" href="../style/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>exercise - Shop</title>
+    <link rel="stylesheet" href="../style/style.css" />
 </head>
 
 <body>
     <nav class="header">
-      <ul class="barre-de-racourci">
-        <li><a href="../index.html" ><img src="../icon/drapeau-de-maison.png"></a></li>
-        <li><a href="../html/article.html" class="active"><img src="../icon/store-alt.png" class="active"></a></li>
-        <li><a href="../html/annonce.html"><img src="../icon/leader-de-lannonce-par-megaphone.png"></a></li>
-        <li><a href="../html/notification.html"><img src="../icon/cloche.png"></a></li>
-      </ul>
+        <ul class="barre-de-racourci">
+            <li><a href="../index.html"><img src="../icon/drapeau-de-maison.png"></a></li>
+            <li><a href="../html/article.html" class="active"><img src="../icon/store-alt.png" class="active"></a></li>
+            <li><a href="../html/annonce.html"><img src="../icon/leader-de-lannonce-par-megaphone.png"></a></li>
+            <li><a href="../html/notification.html"><img src="../icon/cloche.png"></a></li>
+        </ul>
     </nav>
     <section class="welcomeToShop">
-        <h1>Bienvenue dans notre boutique</h1>
-        <p><em>Dérouler, trouver ce qui vous plaît 
-            et appuyez sur la touche <span>ajouter au panier</span> pour ajouter dans 
-            ta panier un produit 
-        </em></p>
+        <h1>Shop</h1>
+        <div class="headerOfShop">
+           <div id="headerOfShop">
+              <div><p>Bienvenus dans notre maison! Dérouler, trouver ce qui vous plaît et appuyez sur la touche <span style="font-size: 1rem; color: greenyellow;">ajouter au panier</span> pour ajouter un produit au panier</p></div>
+              <div><img src="../image/catalog pub1.jpg" height="130px" width="100%" loading="lazy"></div>
+              <div><p>Chaque jour les cadeaux neige ici! La réduction est notre point fort</p></div>
+              <div><img src="../image/catalog pub2.png" height="130px" width="100%" loading="lazy"></div>
+            </div>
+         </div>
+       
     </section>
-    
-     <article class="product">
-      <header>
-          <h2>Samsung Galaxy</h2>
-         <section>
-          <h3>Description</h3>
-          <p>Samsung Galaxy S9, qualité originale.</p>
+    <article class="product">
+        <header>
+            <h2>Samsung Galaxy</h2>
+            <section>
+                <h3>Description</h3>
+                <p>Samsung Galaxy S9, qualité originale.</p>
+            </section>
+        </header>
+        <figure>
+            <img src="../image/Samsung-phone1.png" alt="produit :phone">
+            <p>Prix : <span>1500 CDF</span></p>
+        </figure>
+        <footer>
+            <button class="ajouterAuPannier">Ajouter au panier></button>
+            <p>Code : DEF455</p>
+        </footer>
+    </article>
+    <article class="product">
+        <header>
+            <h2>câble-usb</h2>
+            <section>
+                <h3>Description</h3>
+                <p>une câble usb originale , charge rapide et dureté prolongée</p>
+            </section>
+        </header>
+        <figure>
+            <img src="../image/câble-usb.png" alt="Produit :coco">
+            <p>Prix : <span>1000 CDF</span></p>
+        </figure>
+        <footer>
+            <button class="ajouterAuPannier">Ajouter au panier ></button>
+            <p>Code: DEF456</p>
+        </footer>
+    </article>
+    <article class="product">
+        <header>
+            <h2>Ordinateur de jeux</h2>
+            <section>
+                <h3>Description</h3>
+                <p>Une ordinateur recommandé pour tourner des jeux de toutes catégories</p>
+            </section>
+        </header>
+        <figure>
+            <img src="../image/gaming-computer-desktop-computers.png" alt="Produit :gamming computer">
+            <p>Prix : <span>2000 CDF</span></p>
+        </figure>
+        <footer>
+            <button class="ajouterAuPannier">Ajouter au panier  ></button>
+            <p>Code: DEF457</p>
+        </footer>
+    </article>
+    <article class="product">
+        <header>
+            <h2>lap-top</h2>
+            <section>
+                <h3>Description</h3>
+                <p>une ordinateur puissant Pour tout travail nécessitant d'ordinateur fort</p>
+            </section>
+        </header>
+        <figure>
+            <img src="../image/computer 1.png" alt="Produit : ordinateur">
+            <p>Prix : <span>10000CDF</span></p>
+        </figure>
+        <footer>
+            <button class="ajouterAuPannier">Ajouter au panier></button>
+            <p>Code: DEF458</p>
+        </footer>
+    </article>
+    <article class="product">
+    <header>
+        <h2>MacBook Air</h2>
+        <section>
+            <h3>Description</h3>
+            <p>Un ordinateur portable léger et puissant, parfait pour tous vos besoins professionnels.</p>
         </section>
+    </header>
+    <figure>
+        <img src="https://via.placeholder.com/150" alt="Produit : MacBook Air">
+        <p>Prix : <span>1200 USD</span></p>
+    </figure>
+    <footer>
+        <button class="ajouterAuPannier">Ajouter au panier ></button>
+        <p>Code: DEF459</p>
+    </footer>
+  </article>
+  
+  <article class="product">
+      <header>
+          <h2>iPhone 12</h2>
+          <section>
+              <h3>Description</h3>
+              <p>Un smartphone performant avec un excellent appareil photo et une batterie longue durée.</p>
+          </section>
       </header>
       <figure>
-          <img src="../image/Samsung-phone1.png" alt="produit :phone">
-          <p>Prix : <span>1500 CDF</span></p>
+          <img src="https://via.placeholder.com/150" alt="Produit : iPhone 12">
+          <p>Prix : <span>999 USD</span></p>
       </figure>
+      <footer>
+          <button class="ajouterAuPannier">Ajouter au panier ></button>
+          <p>Code: DEF460</p>
+      </footer>
+  </article>
+  
+  <article class="product">
+      <header>
+          <h2>Samsung Galaxy Tab S7</h2>
+          <section>
+              <h3>Description</h3>
+              <p>Périphérique mobile avec une large écran, idéal pour le divertissement et le travail.</p>
+          </section>
+      </header>
+      <figure>
+          <img src="https://via.placeholder.com/150" alt="Produit : Galaxy Tab S7">
+          <p>Prix : <span>650 USD</span></p>
+      </figure>
+      <footer>
+          <button class="ajouterAuPannier">Ajouter au panier ></button>
+          <p>Code: DEF461</p>
+      </footer>
+  </article>
+  
+  <article class="product">
+      <header>
+          <h2>Bose QuietComfort 35 II</h2>
+          <section>
+              <h3>Description</h3>
+              <p>Cascadeurs antibruit sans fil offrant un confort toute la journée.</p>
+          </section>
+      </header>
+      <figure>
+          <img src="https://via.placeholder.com/150" alt="Produit : Bose QuietComfort 35 II">
+          <p>Prix : <span>349 USD</span></p>
+      </figure>
+      <footer>
+          <button class="ajouterAuPannier">Ajouter au panier ></button>
+          <p>Code: DEF462</p>
+      </footer>
+  </article>
+  
+  <article class="product">
+      <header>
+          <h2>Sony PlayStation 5</h2>
+          <section>
+              <h3>Description</h3>
+              <p>Console de jeux nouvelle génération avec des graphismes époustouflants et des temps de chargement rapides.</p>
+          </section>
+      </header>
+      <figure>
+          <img src="https://via.placeholder.com/150" alt="Produit : PlayStation 5">
+          <p>Prix : <span>499 USD</span></p>
+      </figure>
+      <footer>
+          <button class="ajouterAuPannier">Ajouter au panier ></button>
+          <p>Code: DEF463</p>
+      </footer>
+  </article>
 
-      <footer>
-          <button class ="ajouterAuPannier">Ajouter au panier <img src="../icon/panier-dachat-moins.png" height="20px"></button>
-          <p>Code : DEF455</p>
-      </footer>
-  </article>
-  
-  
-  <article class="product">
-      <header>
-          <h2>câble-usb</h2>
-          <section>
-            <h3>Description</h3>
-            <p>une câble usb originale , charge rapide et dureté prolongée</p>
-          </section>
-      </header>
-      <figure>
-          <img src="../image/câble-usb.png" alt="Produit :coco">
-           <p>Prix : <span>1000 CDF</span></p>
-          
-      </figure>
-     
-      <footer>
-          <button class ="ajouterAuPannier">Ajouter au panier  <img src="../icon/panier-dachat-moins.png" height="20px"></button>
-          <p>Code: DEF456</p>
-      </footer>
-  </article>
-  
-  <article class="product">
-      <header>
-          <h2>Ordinateur de jeux</h2>
-          <section>
-            <h3>Description</h3>
-            <p>Une ordinateur recommandé pour tourner des jeux de toutes catégories</p>
-          </section>
-      </header>
-      <figure>
-          <img src="../image/gaming-computer-desktop-computers.png" alt="Produit :gamming computer">
-           <p>Prix : <span>2000 CDF</span></p>
-          
-      </figure>
-     
-      <footer>
-          <button class ="ajouterAuPannier">Ajouter au panier  <img src="../icon/panier-dachat-moins.png" height="20px"></button>
-          <p>Code: DEF457</p>
-      </footer>
-      
-  </article>
-  <article class="product">
-      <header>
-          <h2>lap-top</h2>
-          <section>
-            <h3>Description</h3>
-            <p>une ordinateur puissant Pour tout travail nécessitant d'ordinateur fort</p>
-          </section>
-      </header>
-      <figure>
-          <img src="../image/computer 1.png" alt="Produit : ordinateur">
-           <p>Prix : <span>10000CDF</span></p>
-      </figure>
-     
-      <footer>
-          <button class ="ajouterAuPannier">Ajouter au panier  <img src="../icon/panier-dachat-moins.png" height="20px"></button>
-          <p>Code: DEF458</p>
-      </footer>
-  </article>
-  
-  <div class="barre-achat">
-      <div class="bouton-pannier">
-          <a href="#pannier" class="pannier">
-              <img src="../icon/panier-dachat-rapide.png" alt="panier-dachat-rapide" height="40px" width="40px">
-          </a>
-          <p id="nbProdDansPannier">0</p>
-      </div>
-  </div>
-  <script src="../script.js" type="text/javascript" charset="utf-8"></script>
+    <div class="barre-achat">
+        <div class="bouton-pannier">
+            <a href="#pannier" class="pannier">
+                <img src="../icon/panier-dachat-rapide.png" alt="panier-dachat-rapide" height="40px" width="40px">
+            </a>
+            <p id="nbProdDansPannier">0</p>
+        </div>
+    </div>
+
+    <!-- File script -->
+    <script src="../script.js" type="text/javascript" charset="utf-8"></script>
+
 </body>
 
 </html>
