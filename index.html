@@ -2,45 +2,85 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Accueil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
+    <input type="checkbox" id="checkSigninbox" style="display: none;" />
+    <input type="checkbox" id="checkSignupbox" style="display: none;"/>
+    <input type="checkbox" id="shopkits"></input>
     
-    <header>
-      <input type="checkbox" id="shopTools"></input>
-      <input type="checkbox" id="profileSetting"></input>
       <section class="shopTools">
         <div class="shopToolsItems">
-        <h2>Outils du shop</h2>
+          <div style="display: flex; justify-content: space-between; padding: 10px;">
+            <h2 style="border-bottom: none;">Outils du shop</h2>
+            <label for="shopkits" style="font-size: 24px;">&timesbar;</label>
+          </div>
            <ul>
-            <li>Dashboard</li>
-            <li>Historique</li>
-            <li>Promotion</li>
-            <li>Mes jetons</li>
-            <li>Mes cadeaux</li>
-            <li>Competition</li>
-            <li>Mes Activités</li>
-            <li>Zone personnelle</li>
+             <li>Dashboard</li>
+             <li>Historique</li>
+             <li>Promotion</li>
+             <li>Mes jetons</li>
+             <li>Mes cadeaux</li>
+             <li>Competition</li>
+             <li>Mes Activités</li>
+             <li>Zone personnelle</li>
            </ul>
         </div>
       </section>
       
       <div class="bare-menu">
-         <label  for="shopTools">
+         <label  for="shopkits">
            <img src="icon/barres-decalees.png" alt="icon reglage" height="25px" width="25px"/>
          </label>
          
           <a href="html/article.html">
             <p id="logo-store">La <span id="logospan1">bou</span>teille <br/> <span id="logospan2">.store</span></p>
           </a>
-        
-         <label for="profileSetting">
-           <img src="" alt="profile" class="profile" height ="30px" width="30px"/>
-         </label>
+        <i class="fas fa-user-tie"></i>
+        <details class="profilDetail">
+          <summary style="color: red; -webkit-text-fill-color: transparent;">détails</summary>
+            <ul class="profilElement">
+              <li><label for="checkSigninbox">Se connecter</label></li>
+              <li><label for="checkSignupbox">s'inscrire</label></li>
+            </ul>
+        </details>
       </div>
-    </header>
+      <div class="signinbox">
+        <div style="display: flex; justify-content: space-between; padding: 10px;">
+          <h2 style="font-weight: bold; border-bottom: none;">Se connecter</h2>
+          <label for="checkSigninbox" style="font-size: 24px;">&timesbar;</label>
+        </div>
+        <form class="signin" action="" method="get" accept-charset="utf-8">
+          <label for="number">number:</label>
+          <input type="number" id="number" placeholder="ex:9700000000">
+          <label for="password">password</label>
+          <input type="password" id="password" placeholder="mot de passe pour se connecter" />
+          <input type="submit" id="connect" value="Se connecter" />
+        </form>
+      </div>
+      <div class="signupbox">
+        <div style="display: flex; justify-content: space-between; padding: 5px;">
+          <h2 style=" font-weight: bold; border-bottom: none;">S'inscrire</h2>
+          <label for="checkSignupbox" style="font-size: 24px;">&timesbar;</label>
+        </div>
+        <form class="signup" action="" method="get" accept-charset="utf-8">
+          <label for="name">Votre nom:</label>
+          <input type="text" id="name" placeholder="Taper votre nom">
+          <label for="prenom">prénom:</label>
+          <input type="text" id="prenom" placeholder="Votre prénom" />
+          <label for="number">number:</label>
+          <input type="number" id="number" placeholder="ex:9700000000">
+          <label for="password">password</label>
+          <input type="password" id="password" placeholder="définir un mot de passe" />
+          <input type="submit" id="register" value="S'inscrire" />
+        </form>
+      </div>
+      <div class="overlay">
+        
+      </div>
 
     <nav class="header">
       <ul class="barre-de-racourci">
@@ -85,7 +125,7 @@
         <p>Visiter notre boutique maintenant en appuyant sur 
           la deuxième icône en haut de l'écran représentant 
           une boutique. </br> <span id="purple-text">Rejoindre nôtre boutique et profiter de: </span> 
-          <span id="orange-text">50% de réduction</span> pendant toute un mois!
+          <span id="orange-text">50% de réduction</span> pendant tout un mois!
         </p>
         <a href="html/article.html" id="getNow-link">Aller en boutique</a>
       </div>
@@ -99,7 +139,7 @@
           <a href="https://t.me/sitedietsupport"><img src="image/telegram-icon.png" alt="telegram-icon" height="24px"></a>
           <a href="tel:+243976905269"><img src="image/iphone-telephone-call.png" atl="phone-call-image" height="24px"></a>
         </nav>
-        <p>Créé par Murhabazi bisimwa Alain <br />All right 👍</p>
+        <p>Créé par Murhabazi bisimwa Alain <br />All right reserved 👍</p>
     </footer>
   </body>
 </html>
