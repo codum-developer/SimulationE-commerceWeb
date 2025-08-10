@@ -387,7 +387,7 @@ h1,h2{
   border : none;
   border-bottom:3px #000000 solid;
   border-radius: 50px;
-  overflow: scroll;
+  overflow: hidden;
 }.product button:active{
   border-bottom: none;
 }.product footer, .product header, .product figure {
@@ -401,9 +401,10 @@ h1,h2{
   border-radius: 5px;
 }.product header section{
   margin-top: 24px;
-  max-height: 100px;
-  overflow: scroll;
-}.product span{
+  height: 100px;
+  overflow-y: scroll;
+}
+.product span{
   text-transform: uppercase;
   border: 1px var(--light-color) solid;
   box-shadow: -3px 4px 5px #000;
