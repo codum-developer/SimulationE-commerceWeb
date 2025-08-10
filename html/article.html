@@ -20,7 +20,7 @@
     <section class="welcomeToShop">
         <h1>Shop</h1>
         <div class="headerOfShop">
-           <div id="headerOfShop">
+           <div id="carouselDelay">
               <div><p>Bienvenus dans notre maison! Dérouler, trouver ce qui vous plaît et appuyez sur la touche <span style="font-size: 1rem; color: greenyellow;">ajouter au panier</span> pour ajouter un produit au panier</p></div>
               <div><img src="../image/catalog pub1.jpg" height="130px" width="100%" loading="lazy"></div>
               <div><p>Chaque jour les cadeaux neige ici! La réduction est notre point fort</p></div>
@@ -106,7 +106,7 @@
         </section>
     </header>
     <figure>
-        <img src="https://via.placeholder.com/150" alt="Produit : MacBook Air">
+        <img src="/image/Mac book air.png" alt="Produit : MacBook Air">
         <p>Prix : <span>1200 USD</span></p>
     </figure>
     <footer>
@@ -124,7 +124,7 @@
           </section>
       </header>
       <figure>
-          <img src="https://via.placeholder.com/150" alt="Produit : iPhone 12">
+          <img src="/image/iphone 12.png" alt="Produit : iPhone 12">
           <p>Prix : <span>999 USD</span></p>
       </figure>
       <footer>
@@ -142,7 +142,7 @@
           </section>
       </header>
       <figure>
-          <img src="https://via.placeholder.com/150" alt="Produit : Galaxy Tab S7">
+          <img src="/image/Tablette-tactile-Samsung-Galaxy-Tab-S7-FE-12-4-Wifi-128-Go-Argent.jpg" alt="Produit : Galaxy Tab S7">
           <p>Prix : <span>650 USD</span></p>
       </figure>
       <footer>
@@ -160,7 +160,7 @@
           </section>
       </header>
       <figure>
-          <img src="https://via.placeholder.com/150" alt="Produit : Bose QuietComfort 35 II">
+          <img src="/image/Bose QuietComfort 35 II.png" alt="Produit : Bose QuietComfort 35 II">
           <p>Prix : <span>349 USD</span></p>
       </figure>
       <footer>
@@ -178,7 +178,7 @@
           </section>
       </header>
       <figure>
-          <img src="https://via.placeholder.com/150" alt="Produit : PlayStation 5">
+          <img src="/image/PS 5 sony.jpeg" alt="Produit : PlayStation 5">
           <p>Prix : <span>499 USD</span></p>
       </figure>
       <footer>
@@ -195,8 +195,16 @@
             <p id="nbProdDansPannier">0</p>
         </div>
     </div>
-
-    <!-- File script -->
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('img');
+            images.forEach(image => {
+            image.setAttribute('loading', 'lazy');
+            });
+        });
+    </script>
+        <!-- File script -->
     <script src="../script.js" type="text/javascript" charset="utf-8"></script>
 
 </body>

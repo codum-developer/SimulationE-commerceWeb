@@ -115,7 +115,22 @@
       
     <section class="container">
       <div class="presentation-boutique">
-        <h1>Bienvenue chez nous</h1>
+        <div class="Welcome">
+          <div id="Welcome">
+             <div>
+               <h1>Bienvenue chez TOI !</h1>
+             </div>
+             <div>
+               <p>Ici c'est ta maison</p>
+             </div>
+             <div>
+               <p>Obtenir tous ce que tu veux grâce à nos stocks illimité !</p>
+             </div>
+             <div>
+               <img src="/image/catalog pub3.jpg" width="100%" height="100px" loading="lazy">
+             </div>
+          </div>
+        </div>
         <p>Ici tu trouvera <span id="purple-text">toutes sortes d'appareil électronique</span>, 
            des accessoires pour toutes tes appareils ! et <span id="orange-text">c'est à un prix 
            promotionnel !</span> scroller pour trouver ce que tu aime
@@ -147,5 +162,25 @@
         </nav>
         <p>Créé par Murhabazi bisimwa Alain <br />All right reserved 👍</p>
     </footer>
+    
+  <script >
+    const content = document.getElementById("Welcome");
+  const slides = content.children;
+  let currentIndex = 0;
+  const totalSlides = slides.length;
+
+  function showNextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    content.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+  setInterval(showNextSlide, 3000);
+  
+  document.addEventListener('DOMContentLoaded', function() {
+     const images = document.querySelectorAll('img');
+     images.forEach(image => {
+     image.setAttribute('loading', 'lazy');
+    });
+  });
+  </script>
   </body>
 </html>

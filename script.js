@@ -12,7 +12,7 @@ ajouterAuPannierBoutons.forEach(ajouterAuPannierBouton => {
 })
 
 
-  const content = document.getElementById("headerOfShop");
+  const content = document.getElementById("carouselDelay");
   const slides = content.children;
   let currentIndex = 0;
   const totalSlides = slides.length;
