@@ -88,10 +88,10 @@
         
       </div>
 
-    <nav class="header">
-      <ul class="barre-de-racourci">
+    <nav class="nav-bar-home">
+      <ul class="barre-de-racourci-home">
         <li>
-          <a href="index.html" class="active">
+          <a href="index.html" >
             <img src="icon/drapeau-de-maison.png" class="active" />
           </a>
         </li>
@@ -173,7 +173,7 @@
     currentIndex = (currentIndex + 1) % totalSlides;
     content.style.transform = `translateX(-${currentIndex * 100}%)`;
   }
-  setInterval(showNextSlide, 3000);
+  setInterval(showNextSlide, 4000);
   
   document.addEventListener('DOMContentLoaded', function() {
      const images = document.querySelectorAll('img');

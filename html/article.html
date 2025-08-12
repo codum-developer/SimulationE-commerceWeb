@@ -9,10 +9,22 @@
 </head>
 
 <body>
-    <nav class="header">
+    <div class="barre-achat">
+        <div class="bouton-pannier">
+            <a id="pannier" href="/html/mon-pannier.html" target="_blank">
+                <img src="../icon/panier-dachat-rapide.png" alt="panier-dachat-rapide" height="40px" width="40px">
+            </a>
+            <p id="nbProdDansPannier">0</p>
+        </div>
+        <div class="logostore-store">
+            <p id="logo-store">La <span id="logospan1">bou</span>teille <br/> <span id="logospan2">.store</span></p>
+        </div>
+    </div>
+    
+    <nav class="nav-bar">
         <ul class="barre-de-racourci">
             <li><a href="../index.html"><img src="../icon/drapeau-de-maison.png"></a></li>
-            <li><a href="../html/article.html" class="active"><img src="../icon/store-alt.png" class="active"></a></li>
+            <li><a href="../html/article.html" ><img src="../icon/store-alt.png" class="active"></a></li>
             <li><a href="../html/annonce.html"><img src="../icon/leader-de-lannonce-par-megaphone.png"></a></li>
             <li><a href="../html/notification.html"><img src="../icon/cloche.png"></a></li>
         </ul>
@@ -27,9 +39,10 @@
               <div><img src="../image/catalog pub2.png" height="130px" width="100%" loading="lazy"></div>
             </div>
          </div>
-       
+       <br />
+       <br />
     </section>
-    <article class="product">
+    <article  class="product">
         <header>
             <h2>Samsung Galaxy</h2>
             <section>
@@ -37,13 +50,16 @@
                 <p>Samsung Galaxy S9, qualité originale.</p>
             </section>
         </header>
-        <figure>
+        <figure >
             <img src="../image/Samsung-phone1.png" alt="produit :phone">
-            <p>Prix : <span>1500 CDF</span></p>
+            <div class="price">
+                <p>Prix : <span id="price">1500 CDF</span></p>
+                <p><span style="font-size: .4em;">Note:</span> <br /><span style="color: yellow;  font-size: 1em; -webkit-text-stroke: 1px var(--primary-color); ">&starf; &starf; &starf;&starf;&starf;</p>
+            </div>
         </figure>
         <footer>
-            <button class="ajouterAuPannier">Ajouter au panier></button>
-            <p>Code : DEF455</p>
+            <button class="ajouterAuPannier">Ajouter au panier</button>
+            <p>Code: <br />DEF455</p>
         </footer>
     </article>
     <article class="product">
@@ -56,11 +72,14 @@
         </header>
         <figure>
             <img src="../image/câble-usb.png" alt="Produit :coco">
-            <p>Prix : <span>1000 CDF</span></p>
+            <div class="price">
+                <p>Prix : <span id="price">20000 CDF</span></p>
+                <p><span style="font-size: .4em;">Note:</span> <br /><span style="color: yellow;  font-size: 1em; -webkit-text-stroke: 1px var(--primary-color); ">&starf; &starf; &starf;&starf;&starf;</p>
+            </div>
         </figure>
         <footer>
-            <button class="ajouterAuPannier">Ajouter au panier ></button>
-            <p>Code: DEF456</p>
+            <button class="ajouterAuPannier">Ajouter au panier</button>
+            <p>Code: <br />DEF456</p>
         </footer>
     </article>
     <article class="product">
@@ -73,11 +92,14 @@
         </header>
         <figure>
             <img src="../image/gaming-computer-desktop-computers.png" alt="Produit :gamming computer">
-            <p>Prix : <span>2000 CDF</span></p>
+            <div class="price">
+                <p>Prix : <span id="price">499.99 CDF</span></p>
+                <p><span style="font-size: .4em;">Note:</span> <br /><span style="color: yellow;  font-size: 1em; -webkit-text-stroke: 1px var(--primary-color); ">&starf; &starf; &starf;&starf;&starf;</p>
+            </div>
         </figure>
         <footer>
-            <button class="ajouterAuPannier">Ajouter au panier  ></button>
-            <p>Code: DEF457</p>
+            <button class="ajouterAuPannier">Ajouter au panier</button>
+            <p>Code: <br />DEF457</p>
         </footer>
     </article>
     <article class="product">
@@ -90,11 +112,14 @@
         </header>
         <figure>
             <img src="../image/computer 1.png" alt="Produit : ordinateur">
-            <p>Prix : <span>10000CDF</span></p>
+            <div class="price">
+                <p>Prix : <span id="price">900.99 CDF</span></p>
+                <p><span style="font-size: .4em;">Note:</span> <br /><span style="color: yellow;  font-size: 1em; -webkit-text-stroke: 1px var(--primary-color); ">&starf; &starf; &starf;&starf;&starf;</p>
+            </div>
         </figure>
         <footer>
-            <button class="ajouterAuPannier">Ajouter au panier></button>
-            <p>Code: DEF458</p>
+            <button class="ajouterAuPannier">Ajouter au panier</button>
+            <p>Code: <br />DEF458</p>
         </footer>
     </article>
     <article class="product">
@@ -107,11 +132,14 @@
     </header>
     <figure>
         <img src="../image/Mac book air.png" alt="Produit : MacBook Air">
-        <p>Prix : <span>1200 USD</span></p>
+        <div class="price">
+            <p>Prix : <span id="price">150.99 CDF</span></p>
+            <p><span style="font-size: .4em;">Note:</span> <br /><span style="color: yellow;  font-size: 1em; -webkit-text-stroke: 1px var(--primary-color); ">&starf; &starf; &starf;&starf;&starf;</p>
+        </div>
     </figure>
     <footer>
-        <button class="ajouterAuPannier">Ajouter au panier ></button>
-        <p>Code: DEF459</p>
+        <button class="ajouterAuPannier">Ajouter au panier</button>
+        <p>Code: <br />DEF459</p>
     </footer>
   </article>
   
@@ -125,11 +153,14 @@
       </header>
       <figure>
           <img src="../image/iphone 12.png" alt="Produit : iPhone 12">
-          <p>Prix : <span>999 USD</span></p>
+          <div class="price">
+                <p>Prix : <span id="price">750.99 CDF</span></p>
+                <p><span style="font-size: .4em;">Note:</span> <br /><span style="color: yellow;  font-size: 1em; -webkit-text-stroke: 1px var(--primary-color); ">&starf; &starf; &starf;&starf;&starf;</p>
+            </div>
       </figure>
       <footer>
-          <button class="ajouterAuPannier">Ajouter au panier ></button>
-          <p>Code: DEF460</p>
+          <button class="ajouterAuPannier">Ajouter au panier</button>
+          <p>Code: <br />DEF460</p>
       </footer>
   </article>
   
@@ -143,11 +174,14 @@
       </header>
       <figure>
           <img src="../image/Tablette-tactile-Samsung-Galaxy-Tab-S7-FE-12-4-Wifi-128-Go-Argent.jpg" alt="Produit : Galaxy Tab S7">
-          <p>Prix : <span>650 USD</span></p>
+          <div class="price">
+            <p>Prix : <span id="price">900.99 CDF</span></p>
+            <p><span style="font-size: .4em;">Note:</span> <br /><span style="color: yellow;  font-size: 1em; -webkit-text-stroke: 1px var(--primary-color); ">&starf; &starf; &starf;&starf;&starf;</p>
+          </div>
       </figure>
       <footer>
-          <button class="ajouterAuPannier">Ajouter au panier ></button>
-          <p>Code: DEF461</p>
+          <button class="ajouterAuPannier">Ajouter au panier</button>
+          <p>Code: <br />DEF461</p>
       </footer>
   </article>
   
@@ -161,11 +195,14 @@
       </header>
       <figure>
           <img src="../image/Bose QuietComfort 35 II.png" alt="Produit : Bose QuietComfort 35 II">
-          <p>Prix : <span>349 USD</span></p>
+          <div class="price">
+                <p>Prix : <span id="price">150.98 CDF</span></p>
+                <p><span style="font-size: .4em;">Note:</span> <br /><span style="color: yellow;  font-size: 1em; -webkit-text-stroke: 1px var(--primary-color); ">&starf; &starf; &starf;&starf;&starf;</p>
+            </div>
       </figure>
       <footer>
-          <button class="ajouterAuPannier">Ajouter au panier ></button>
-          <p>Code: DEF462</p>
+          <button class="ajouterAuPannier">Ajouter au panier</button>
+          <p>Code: <br />DEF462</p>
       </footer>
   </article>
   
@@ -179,22 +216,19 @@
       </header>
       <figure>
           <img src="../image/PS 5 sony.jpeg" alt="Produit : PlayStation 5">
-          <p>Prix : <span>499 USD</span></p>
+          <div class="price">
+                <p>Prix : <span id="price">100.59 CDF</span></p>
+                <p><span style="font-size: .4em;">Note:</span> <br /><span style="color: yellow;  font-size: 1em; -webkit-text-stroke: 1px var(--primary-color); ">&starf; &starf; &starf;&starf;&starf;</p>
+            </div>
       </figure>
       <footer>
-          <button class="ajouterAuPannier">Ajouter au panier ></button>
-          <p>Code: DEF463</p>
+          <button class="ajouterAuPannier">Ajouter au panier</button>
+          <p>Code: <br />DEF463</p>
       </footer>
   </article>
-
-    <div class="barre-achat">
-        <div class="bouton-pannier">
-            <a href="#pannier" class="pannier">
-                <img src="../icon/panier-dachat-rapide.png" alt="panier-dachat-rapide" height="40px" width="40px">
-            </a>
-            <p id="nbProdDansPannier">0</p>
-        </div>
-    </div>
+  
+  <br />
+  <br /><br />
     
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -203,6 +237,7 @@
             image.setAttribute('loading', 'lazy');
             });
         });
+       document = document.getElementById
     </script>
         <!-- File script -->
     <script src="../script.js" type="text/javascript" charset="utf-8"></script>

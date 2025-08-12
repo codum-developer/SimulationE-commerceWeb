@@ -24,3 +24,24 @@ ajouterAuPannierBoutons.forEach(ajouterAuPannierBouton => {
 
   // Démarrer le carrousel avec un délai de 3 secondes entre chaque transition
   setInterval(showNextSlide, 3000); // 3 secondes
+  
+  document.addEventListener("DOMContentLoaded", () =>{
+    pannier = document.getElementById("pannier")
+    const body = document.body
+    const targetPage = "../html/mon-pannier.html"
+    if (body.clientWidth >= 700) {
+      if (pannier) {
+        pannier.removeAttribute("target");
+        pannier.removeAttribute("href")
+        console.log("target attribute removed")
+        iframe = document.createElement("iframe")
+        iframe.src = targetPage
+        iframe.id = "myIframe"
+        iframe.style.width = "35%"
+        body.insertBefore(iframe , body.firstChild)
+      }
+      
+    } else {
+      console.log("la largeur est inférieure à 700px")
+    }
+  })
