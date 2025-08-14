@@ -163,24 +163,6 @@
         <p>&COPY;2025 Murhabazi bisimwa Alain <br />All right reserved 👍</p>
     </footer>
     
-  <script >
-    const content = document.getElementById("Welcome");
-  const slides = content.children;
-  let currentIndex = 0;
-  const totalSlides = slides.length;
-
-  function showNextSlide() {
-    currentIndex = (currentIndex + 1) % totalSlides;
-    content.style.transform = `translateX(-${currentIndex * 100}%)`;
-  }
-  setInterval(showNextSlide, 4000);
-  
-  document.addEventListener('DOMContentLoaded', function() {
-     const images = document.querySelectorAll('img');
-     images.forEach(image => {
-     image.setAttribute('loading', 'lazy');
-    });
-  });
-  </script>
+  <script src="index.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>

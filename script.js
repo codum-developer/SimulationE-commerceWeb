@@ -37,7 +37,7 @@ ajouterAuPannierBoutons.forEach(ajouterAuPannierBouton => {
         iframe = document.createElement("iframe")
         iframe.src = targetPage
         iframe.id = "myIframe"
-        iframe.style.width = "35%"
+        iframe.style.width = "32%"
         body.insertBefore(iframe , body.firstChild)
       }
       
@@ -45,3 +45,24 @@ ajouterAuPannierBoutons.forEach(ajouterAuPannierBouton => {
       console.log("la largeur est inférieure à 700px")
     }
   })
+  
+  const navBar = document.querySelector(".nav-bar")
+  let dernierPosition = 0
+    window.addEventListener("scroll", (e) =>{
+      const positionActuelle = window.scrollY
+      console.log(positionActuelle)
+      if (window.scrollY > 300) {
+        navBar.style.bottom = "-100px"
+      } else if(positionActuelle < dernierPosition){
+        navBar.style.bottom = 0
+      };
+      dernierPosition = positionActuelle
+      console.log("dernier position " + dernierPosition)
+    })
+     
+
+ const searchBar = document.getElementById("searchBar");
+ 
+ let placeholderValue = "iphone";
+ 
+ searchBar.placeholder = placeholderValue;

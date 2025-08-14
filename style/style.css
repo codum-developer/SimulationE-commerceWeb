@@ -182,11 +182,15 @@ h1,h2{
 }
 
 .nav-bar-home{
-  position: sticky;
-  top: 0;
+  position: fixed;
+  top: -70px;
+  width: 100%;
   background: var(--gradient);
   z-index: 900;
   padding: 10px;
+  transition: 1s ease;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 .barre-de-racourci-home{
   margin: 0 auto;
@@ -203,16 +207,17 @@ h1,h2{
   height: 60px;
   padding-right: 20px;
   padding-left: 20px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
   box-shadow: 0 0 10px var(--dark-color);
+  transition: 2s ease;
 }
 
 .barre-de-racourci{
   position: absolute;
-  margin: 0 auto;
-  bottom: 20px;
-  width: 90%;
+  left: 7.5%;
+  bottom: 25%;
+  width: 85%;
   display: flex;
   justify-content: space-between;
 }
@@ -220,7 +225,7 @@ h1,h2{
   border-bottom: 3px solid var(--dark-color);
   border-bottom-right-radius: 2px;
   border-bottom-left-radius: 2px;
-  filter: drop-shadow(0 0 5px var(--dark-color));
+  filter: drop-shadow(0 0 10px var(--primary-color));
 }
 .barre-de-racourci img, .barre-de-racourci-home img{
   padding-bottom: 2px;
@@ -481,8 +486,8 @@ h1,h2{
 
 @media (min-width: 700px){
   .product{
-    max-width: 60%;
-    transform: translateX(60%);
+    max-width: 65%;
+    transform: translateX(50%);
   }
   .product figure{
     justify-content: space-between;
@@ -494,7 +499,7 @@ h1,h2{
   }
   .product footer{
     position: absolute;
-    left: 70%;
+    left: 65%;
     top: 50%;
   }
   #myIframe{
@@ -608,4 +613,53 @@ article .supprimerProd{
   z-index: 1000;
   font-weight: bold;
 }
-  
+
+
+.NoRotateScreen{
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  text-align: center;
+  align-content: center;
+  width: 100vw;
+  height: 100vh;
+  color: var(--light-color);
+  background: #000000EB;
+  font-size: 2rem;
+  font-weight: bold;
+  z-index: 1000;
+} 
+.NoRotateScreen p{
+  width: 50%;
+  padding: 20px;
+  margin: 0 auto;
+  border: 2px solid var(--light-color);
+  box-shadow: 0 0 10px var(--primary-color);
+  background: var(--gradient);
+  border-radius: 20px;
+  animation: ChangeColor 2s infinite alternate-reverse;
+}
+.NoRotateScreen p:hover{
+  animation: none;
+}
+
+@keyframes ChangeColor{
+  0%{
+    color: var(--light-color);
+  }
+  50%{
+    color: #000000EB;
+    font-size: 1.9rem;
+  }
+  100%{
+    color: var(--primary-color);
+    background: var(--gradientDetail);
+  }
+}
+ 
+@media (orientation: landscape) {
+  .NoRotateScreen{
+    display: block;
+  }
+}  
