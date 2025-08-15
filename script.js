@@ -14,12 +14,12 @@ ajouterAuPannierBoutons.forEach(ajouterAuPannierBouton => {
 
   const content = document.getElementById("carouselDelay");
   const slides = content.children;
-  let currentIndex = 0;
+  let currentIndexC = 0;
   const totalSlides = slides.length;
 
   function showNextSlide() {
-    currentIndex = (currentIndex + 1) % totalSlides;
-    content.style.transform = `translateX(-${currentIndex * 100}%)`;
+    currentIndexC = (currentIndexC + 1) % totalSlides;
+    content.style.transform = `translateX(-${currentIndexC * 100}%)`;
   }
 
   // Démarrer le carrousel avec un délai de 3 secondes entre chaque transition
@@ -47,22 +47,44 @@ ajouterAuPannierBoutons.forEach(ajouterAuPannierBouton => {
   })
   
   const navBar = document.querySelector(".nav-bar")
-  let dernierPosition = 0
     window.addEventListener("scroll", (e) =>{
-      const positionActuelle = window.scrollY
-      console.log(positionActuelle)
       if (window.scrollY > 300) {
         navBar.style.bottom = "-100px"
-      } else if(positionActuelle < dernierPosition){
+      }else{
         navBar.style.bottom = 0
-      };
-      dernierPosition = positionActuelle
-      console.log("dernier position " + dernierPosition)
-    })
-     
+      }
+    }) 
 
- const searchBar = document.getElementById("searchBar");
- 
- let placeholderValue = "iphone";
- 
- searchBar.placeholder = placeholderValue;
+
+const searchBar = document.getElementById("searchBar");
+const placeholderValues = ["Vous cherchez", "Iphone15", "Samsung", "PS5, PS4 sony", "Gamming", "Computer", "Casquette"];
+let currentIndex = 0;
+const delaiEnMs = 3000; // 3 secondes
+
+// Appliquer la transition CSS une seule fois
+searchBar.style.transition = "5s ease";
+
+function updatePlaceholder() {
+  // Récupère la valeur de placeholder actuelle
+  const placeholderValue = placeholderValues[currentIndex];
+  
+  // Met à jour l'attribut placeholder
+  searchBar.placeholder = placeholderValue;
+  
+  // Affiche la nouvelle valeur dans la console
+  console.log(`Le nouveau placeholder est : ${placeholderValue}`);
+  
+  // Incrémente l'index pour la prochaine itération
+  currentIndex++;
+  
+  // Si nous avons atteint la fin du tableau, nous recommençons au début
+  if (currentIndex >= placeholderValues.length) {
+    currentIndex = 0;
+  }
+}
+
+// Appelle la fonction une première fois pour initialiser le placeholder
+updatePlaceholder();
+
+// Lance l'intervalle pour appeler la fonction toutes les 3 secondes
+setInterval(updatePlaceholder, delaiEnMs);

@@ -7,7 +7,14 @@ const content = document.getElementById("Welcome");
     currentIndex = (currentIndex + 1) % totalSlides;
     content.style.transform = `translateX(-${currentIndex * 100}%)`;
   }
-  setInterval(showNextSlide, 4000);
+
+  // Démarrer le carrousel avec un délai de 3 secondes entre chaque transition
+  setInterval(showNextSlide, 3000); // 3 secondes
+
+
+
+
+
   
   document.addEventListener('DOMContentLoaded', function() {
      const images = document.querySelectorAll('img');

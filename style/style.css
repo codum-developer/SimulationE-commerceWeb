@@ -56,6 +56,9 @@ h1,h2{
   border-bottom: 1px solid var(--primary-color);
   display: block;
 }
+input:focus{
+  outline: 1px solid var(--secondary-color);
+}
 #shopkits{
   display:none;
 }
@@ -233,6 +236,63 @@ h1,h2{
   width: 25px;
 }
 
+.ShopPresentation{
+  position: relative;
+  height: 22rem;
+  background-image: var(--gradient);
+  background-image: url("/image/backgroundHome.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  overflow: hidden;
+  padding-right: 1rem;
+}
+.ImageInShopPresentation{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ImageInShopPresentation ul{
+  height: 42%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  overflow: hidden;
+}
+/*.ImageInShopPresentation ul li:nth-child(1){
+  transform: translateY(-200%);
+}
+.ImageInShopPresentation ul li:nth-child(2){
+  transform: translateY(-370%);
+}
+.ImageInShopPresentation ul li:nth-child(3){
+  transform: translateY(-250%);
+}
+*/
+.ImageInShopPresentation img{
+  height: 90%;
+  width: 95%;
+}
+
+.TextInShopPresentation{
+  position: absolute;
+  left: 45%;
+  top: 30%;
+  color: var(--light-color);
+  border-left: 3px var(--light-color) solid;
+  padding-left: .8rem;
+  font-family: fantasy;
+  font-size: .6rem;
+}
+.TextInShopPresentation ul li{
+  font-size: 1rem;
+}
 
 
 .presentation-boutique{
@@ -247,12 +307,13 @@ h1,h2{
   max-width: 600px;
   margin: 0 auto;
   margin-top: 30px;
+  background: var(--gradient);
+  color: var(--light-color);
 }
 #Welcome{
   display: flex;
   transition: transform 0.6s ease-in-out;
   align-items: center;
-  background: rgba(168, 133, 133, 0.23)
 }
 #Welcome> div{
   font-weight: bold;
@@ -272,8 +333,7 @@ h1,h2{
   height: 100px;
   font-size: 1.8rem;
   border-bottom: none;
-  color: var(--primary-color);
-  animation: zoomShadow 2s infinite alternate 0.s;
+  animation: zoomShadow 2s infinite alternate 0.5s;
 }
 @keyframes zoomShadow{
   0%{text-shadow: 0 0 0 #000000; font-size: 1.8rem;}
@@ -338,6 +398,7 @@ h1,h2{
   box-shadow: 6px 4px 10px #000000;
   animation: agitator 1s infinite alternate 1s;
 }
+
 
 .pageFoot{
   background: var(--dark-color);
@@ -485,6 +546,26 @@ h1,h2{
 }
 
 @media (min-width: 700px){
+  .ShopPresentation{
+    height: 30rem;
+    font-size: 2rem;
+  }
+  .ImageInShopPresentation ul{
+    height: 100%;
+  }
+  .TextInShopPresentation{
+    height: 30%;
+    width: 50%;
+    align-content: center;
+  }
+  .TextInShopPresentation ul li:first-child {
+    font-size: 2rem;
+    text-decoration: underline;
+    list-style: none;
+  }
+  .TextInShopPresentation ul li{
+    list-style: disc inside;
+  }
   .product{
     max-width: 65%;
     transform: translateX(50%);
@@ -507,6 +588,7 @@ h1,h2{
     top: 325px;
     height: 1000px;
   }
+  
 }
 
 
