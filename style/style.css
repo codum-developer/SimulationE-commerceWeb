@@ -245,7 +245,6 @@ input:focus{
   background-size: cover;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 100vw;
   overflow: hidden;
   padding-right: 1rem;
@@ -256,27 +255,36 @@ input:focus{
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 .ImageInShopPresentation ul{
   height: 42%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
-  align-content: center;
+  justify-items: center;
   overflow: hidden;
+  
 }
-/*.ImageInShopPresentation ul li:nth-child(1){
-  transform: translateY(-200%);
+.ImageInShopPresentation ul li{
+  flex: 0 0 100%;
+  animation: autoscrollY 10s infinite alternate;
+  transition: animation 10s alternate;
 }
-.ImageInShopPresentation ul li:nth-child(2){
-  transform: translateY(-370%);
+
+@keyframes autoscrollY{
+  0%{
+    transform: translateX(0);
+    opacity: .9;
+  }
+  100%{
+    transform: translateX(-310%);
+    opacity: 1;
+  }
 }
-.ImageInShopPresentation ul li:nth-child(3){
-  transform: translateY(-250%);
-}
-*/
+
 .ImageInShopPresentation img{
-  height: 90%;
+  height: 95%;
   width: 95%;
 }
 
@@ -292,6 +300,10 @@ input:focus{
 }
 .TextInShopPresentation ul li{
   font-size: 1rem;
+  
+}
+.TextInShopPresentation ul li:first-child{
+  text-decoration: underline;
 }
 
 
@@ -560,7 +572,6 @@ input:focus{
   }
   .TextInShopPresentation ul li:first-child {
     font-size: 2rem;
-    text-decoration: underline;
     list-style: none;
   }
   .TextInShopPresentation ul li{
