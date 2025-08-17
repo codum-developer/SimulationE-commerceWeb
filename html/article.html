@@ -11,25 +11,29 @@
 
 <body>
     <div class="barre-achat">
-        <div class="bouton-pannier">
-            <a id="pannier" href="./html/mon-pannier.html" target="_blank">
-                <img src="../icon/panier-dachat-rapide.png" alt="panier-dachat-rapide" height="40px" width="40px">
-            </a>
-            <p id="nbProdDansPannier">0</p>
-        </div>
-        <input type="text" placeholder="" id="searchBar" style="position: absolute; top: 25%; left: 40%; width: 40%; height: 40%; border-radius: 15px; padding: 5px;">
-        <i class="fas fa-search" style="position: absolute; top: 32%; left: 73%;" ></i>
         <div class="logostore-store">
             <p id="logo-store">La <span id="logospan1">bou</span>teille <br/> <span id="logospan2">.store</span></p>
+        </div>
+        
+        <div class="searchBar">
+            <input type="text" placeholder="" id="searchBar">
+            <i class="fas fa-search"  ></i>
+        </div>
+        
+        <div class="bouton-pannier">
+            <p id="nbProdDansPannier">0</p>
+            <a id="pannier" href="./html/mon-pannier.html" target="_blank">
+                <i class="fas fa-cart-shopping"></i>
+            </a>
         </div>
     </div>
     
     <nav class="nav-bar">
         <ul class="barre-de-racourci">
-            <li><a href="../index.html"><img src="../icon/drapeau-de-maison.png"></a></li>
-            <li><a href="../html/article.html" ><img src="../icon/store-alt.png" class="active"></a></li>
-            <li><a href="../html/annonce.html"><img src="../icon/leader-de-lannonce-par-megaphone.png"></a></li>
-            <li><a href="../html/notification.html"><img src="../icon/cloche.png"></a></li>
+            <li><a href="../index.html"><i class="fas fa-home"></i></a></li>
+            <li><a href="../html/article.html" class="active"><i class="fas fa-store"></i></a></li>
+            <li><a href="../html/annonce.html"><i class="fas fa-bullhorn"></i></a></li>
+            <li><a href="../html/notification.html"><i class="fas fa-bell"></i></a></li>
         </ul>
     </nav>
     <section class="welcomeToShop">
