@@ -332,7 +332,7 @@ input:focus{
   
 }
 #Welcome> div{
-  font-weight: 900;
+  font-weight: bold;
   flex: 0 0 100%;
   text-align: center;
 }
@@ -385,7 +385,7 @@ input:focus{
   flex-wrap: wrap;
   align-items: center;
   gap: 10px;
-  font-weight: 900;
+  font-weight: bold;
   font-size: 2rem;
   color: var(--dark-color);
   padding:  20px 0;
@@ -467,7 +467,8 @@ input:focus{
    top: -12px;
    right: -2px;
    font-size: 1rem;
-   font-weight: 900;
+   font-weight: bold
+   ;
  }
  .searchBar{
    display: flex;
@@ -510,10 +511,10 @@ input:focus{
   position: relative;
   background: var(--gradientDetail);
   max-height: 130px;
-  max-width: 600px;
   box-shadow: 0 0 10px var(--primary-color);
   border-radius: 10px;
-  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 0;
 }
 #carouselDelay{
@@ -694,7 +695,7 @@ input:focus{
 
 .mon-pannier-header{
   padding: 20px;
-  font-weight: bolder;
+  font-weight: bold;
 }
 .mon-pannier{
   display: grid;
@@ -712,7 +713,7 @@ input:focus{
   flex-direction: column;
 }
 .prix-achat p{
-  font-weight: bolder;
+  font-weight: bold;
   line-height: 20px;
 }
 article .supprimerProd{
@@ -737,53 +738,3 @@ article .supprimerProd{
   z-index: 1000;
   font-weight: bold;
 }
-
-
-.NoRotateScreen{
-  display: none;
-  position: fixed;
-  left: 0;
-  top: 0;
-  text-align: center;
-  align-content: center;
-  width: 100vw;
-  height: 100vh;
-  color: var(--light-color);
-  background: #000000EB;
-  font-size: 2rem;
-  font-weight: bold;
-  z-index: 1000;
-} 
-.NoRotateScreen p{
-  width: 50%;
-  padding: 20px;
-  margin: 0 auto;
-  border: 2px solid var(--light-color);
-  box-shadow: 0 0 10px var(--primary-color);
-  background: var(--gradient);
-  border-radius: 20px;
-  animation: ChangeColor 2s infinite alternate-reverse;
-}
-.NoRotateScreen p:hover{
-  animation: none;
-}
-
-@keyframes ChangeColor{
-  0%{
-    color: var(--light-color);
-  }
-  50%{
-    color: #000000EB;
-    font-size: 1.9rem;
-  }
-  100%{
-    color: var(--primary-color);
-    background: var(--gradientDetail);
-  }
-}
- 
-@media (orientation: landscape) {
-  .NoRotateScreen{
-    display: block;
-  }
-}  
