@@ -511,10 +511,10 @@ input:focus{
   position: relative;
   background: var(--gradientDetail);
   max-height: 130px;
+  max-width: 600px;
   box-shadow: 0 0 10px var(--primary-color);
   border-radius: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 0 auto;
   z-index: 0;
 }
 #carouselDelay{
