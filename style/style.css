@@ -247,8 +247,9 @@ input:focus{
 .ShopPresentation{
   position: relative;
   height: 22rem;
-  background-image: var(--gradient);
-  background-image: url("../image/imageDeFontHome.jpg");
+  background:
+    var(--gradient), 
+    url("../image/imageDeFontHome.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -442,10 +443,10 @@ input:focus{
   align-items: center;
   flex-wrap: nowrap;
   padding: 10px;
-  column-gap: 10px;
+  column-gap: 7px;
 }
 .barre-achat div{
-  flex-shrink: 1;
+  flex-shrink: 2;
 }
 .bouton-pannier{
   display: flex;
@@ -489,6 +490,7 @@ input:focus{
    border-top-right-radius: 10px;
    border-bottom-right-radius: 10px;
    padding-top: 10px;
+   font-size: .9rem;
  }
 
  .logostore-store{
